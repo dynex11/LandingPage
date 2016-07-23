@@ -1,0 +1,61 @@
+/*color definition */
+
+@main_bg_color: #006E9F;
+@main_txt_color: #dddddd;
+@tempcolor: #dddddd;
+
+
+
+
+
+/* main styling of the elements */
+
+body {
+	padding-top: 85px!important;
+	font-family: 'Roboto', sans-serif!important;
+}
+
+.navbar-default  {
+	background-color: @main_bg_color;
+
+	.container-fluid {
+		min-height: 85px;
+		.navbar-collapse {
+			padding-top:15px;
+		}
+	}
+
+	.navbar-nav {	
+		color: @main_txt_color;
+		> li {
+			> a {
+				color: @main_txt_color;
+				&:hover {
+					color: lighten(@main_txt_color, 10%);
+				}
+			}
+
+		}
+	}
+}
+
+
+#errorbox{
+	color: #fff;
+	background-color: #ff1a1a;
+	font-family: sans-serif;
+	font-size: 150%;
+	margin-top: -40px;	
+}
+.deleteButton{
+	margin: 10px 0px 20px 0px;
+	position: realtive;
+	float: right;
+
+}
+
+.footer {
+	background-color: @main_bg_color;
+	min-height: 85px;
+	color: #fff;
+}
