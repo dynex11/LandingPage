@@ -6760,6 +6760,9 @@ body {
   position: realtive;
   float: right;
 }
+#homeButton {
+  margin-left: 100px;
+}
 .footer {
   background-color: #006E9F;
   min-height: 85px;
