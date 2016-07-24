@@ -25,21 +25,18 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-          <![endif]-->
-          <script src="js/charts.js"> </script>
+          
+          
           <!-- Bootstrap Core JavaScript -->
           <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" async></script> -->
           <!-- google maps -->
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw79V9rKFksZLgO3_PBX_LDbNjqBO0jAQ&callback=initMap" defer></script>
+         
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
           </script>
           <script type="text/javascript" src="https://www.google.com/jsapi"></script>
           <!-- jQuery Version 1.11.1 -->
           <script src="bower_components/jquery/dist/jquery.min.js"></script>
           <script src="bower_components/jquery-sticky/jquery.sticky.js"></script>
-          <script src="js/dateValidator.js"></script>
           <script src="js/responseHandler.js"></script>
           <script src="js/ajax.js"></script>
           <script src="js/initializor.js"></script>
@@ -64,15 +61,12 @@
 
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <form class="navbar-form navbar-left" role="search">
-                  <div class="form-group" id="floating-panel">
-                    <input id="address" type="textbox" class="form-control" placeholder="ZIP code" value="">
-                    <input id="start_date" type="date" class="form-control" placeholder="Start Date" value="">
-                    <input id="end_date" type="date" class="form-control" placeholder="End Date" value="">
-                    <input id="submit" type="button" value="Search" class="btn btn-default">
-                    <button id="homeButton" type="button" class="btn btn-primary" onclick="window.location.href='index.html'">Home</button>
-                  </div>
-               </form>
+                <div class="navbar-form navbar-right homeButton" role="search">
+                  <!-- <div class="form-group" id="floating-panel"> -->
+                   
+                    <button id="homeButton" type="button" class="btn btn-primary navbar-right" onclick="window.location.href='index.html'">Home</button>
+                  <!-- </div> -->
+               </div>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -97,43 +91,7 @@
 
      </div>
        <div class="col-md-3 btn-group rightSideButtons" data-toggle="buttons">
-        <ul id="weatherMetrics">
-          <li>
-            <label  id="Lufttemperatur_Tagesmaximum" class=" weatherMetric btn btn-xs btn-primary">
-              <input id="Lufttemperatur Tagesmaximum_button" data-element="Lufttemperatur Tagesmaximum" class="metrics_checkbox" type="checkbox" autocomplete="off" >Lufttemperatur Tagesmaximum
-            </label>
-          </li>
-          <li>
-            <label  id="Lufttemperatur_Tagesminimum" class=" weatherMetric btn btn-xs btn-primary ">
-              <input id="Lufttemperatur Tagesminimum_button" data-element="Lufttemperatur Tagesminimum" class="metrics_checkbox" type="checkbox" autocomplete="off" > Lufttemperatur Tagesminimum
-            </label>
-          </li>
-          <li>
-            <label  id="Lufttemperatur_Tagesmittel" class=" weatherMetric btn btn-xs btn-primary">
-              <input id="Lufttemperatur Tagesmittel_button" data-element="Lufttemperatur Tagesmittel" class="metrics_checkbox" type="checkbox" autocomplete="off" checked> Lufttemperatur Tagesmittel
-            </label>
-          </li>
-          <li>
-            <label  id="Neuschneehoehe" class=" weatherMetric btn btn-xs btn-primary ">
-              <input id="Neuschneehöhe_button" data-element="Neuschneehöhe" class="metrics_checkbox" type="checkbox" autocomplete="off" > Neuschneehöhe
-            </label>
-          </li>
-          <li>
-            <label  id="Niederschlagshoehe" class=" weatherMetric btn btn-xs btn-primary ">
-              <input id="Niederschlagshöhe_button" data-element="Niederschlagshöhe" class="metrics_checkbox" type="checkbox" autocomplete="off" > Niederschlagshöhe
-            </label>
-          </li>
-          <li>
-            <label  id="Relative_Luftfeuchte" class=" weatherMetric btn btn-xs btn-primary ">
-              <input id="Relative Luftfeuchte_button" data-element="Relative Luftfeuchte" class="metrics_checkbox" type="checkbox" autocomplete="off" > Relative Luftfeuchte
-            </label>
-          </li>
-          <li>
-            <label  id="Schneehoehe" class=" weatherMetric btn btn-xs btn-primary ">
-              <input id="Schneehöhe_button" data-element="Schneehöhe" class="metrics_checkbox" type="checkbox" autocomplete="off" > Schneehöhe
-            </label>
-          </li>
-        </ul>
+        
       </div>
      </div>
    </div>
@@ -141,8 +99,7 @@
   <div class="footer container-fluid">
     <div class="row">
      <div class="col-md-12 impressum">
-     <a href="impressum.html"><h4>Impressum</h4></a>
-     
+     <h4>Impressum</h4>
      </div>
    </div>
   </div>
