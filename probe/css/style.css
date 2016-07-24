@@ -172,9 +172,10 @@ header .container-fluid
 
 footer
 {
-    background-color: rgba(2, 110, 159, 1);
+    background-color: #006E9F;
     padding-top: 2em;
     padding-bottom: 1.2em;
+    min-height: 85px;
 }
 
 footer h1,
@@ -192,3 +193,4 @@ footer p
 {
     padding-top: 50px;
 }
+

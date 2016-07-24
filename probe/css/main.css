@@ -6760,13 +6760,22 @@ body {
   position: realtive;
   float: right;
 }
-#homeButton {
-  margin-left: 100px;
+.homeButton {
+  margin-right: 50px;
+  font-family: 'Calibri', serif;
+}
+.impressum {
+  textmargin-top: 30px;
+}
+.impressum > a {
+  color: green;
+}
+strong {
+  font-weight: bold;
 }
 .footer {
   background-color: #006E9F;
   min-height: 85px;
-  color: #fff;
 }
 .dashboardDivArea {
   padding: 40px 0px 10px 0px;
